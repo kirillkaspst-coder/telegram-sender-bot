@@ -10,11 +10,11 @@ groups = [
     "https://t.me/provrkahsjdjx",
 ]
 
-message = "🟥КУПЛЮ АЛЬФА БАНК ЛИЧНЫЙ КАБИНЕТ 🟩
+message = "🟥КyПЛy aЛЬФA Б@НК ЛИЧНЫЙ К@БИНЕТ 🟩
 14+ 8.500 
 16+ 11.000
 18+ 14.000
-Скупаю лк Тинькофф писать в лс
+Скyп@ю лк Тинькофф писать в лс
 @Sherek_2"
 
 client = TelegramClient("session", api_id, api_hash)
