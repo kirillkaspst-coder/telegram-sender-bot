@@ -1,0 +1,33 @@
+from telethon import TelegramClient
+import asyncio
+import random
+import os
+
+api_id = int(os.getenv("32341939"))
+api_hash = os.getenv("6c4cb3ee1bfa7c2640cfff2026b27ceb")
+
+groups = [
+    "https://t.me/provrkahsjdjx",
+]
+
+message = "🟥КУПЛЮ АЛЬФА БАНК ЛИЧНЫЙ КАБИНЕТ 🟩
+14+ 8.500 
+16+ 11.000
+18+ 14.000
+Скупаю лк Тинькофф писать в лс
+@Sherek_2"
+
+client = TelegramClient("session", api_id, api_hash)
+
+async def main():
+    while True:
+        for group in groups:
+            try:
+                await client.send_message(group, message)
+                print("Отправлено:", group)
+                await asyncio.sleep(random.randint(60,180))
+            except Exception as e:
+                print("Ошибка:", e)
+
+with client:
+    client.loop.run_until_complete(main())
